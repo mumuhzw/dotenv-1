@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    min-height: 100vh;
+}
+
+.contato-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.contato-card {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+.contato-card h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333333;
+    font-size: 28px;
+}
+
+.contato-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-card label {
+    margin-bottom: 6px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contato-card input,
+.contato-card textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contato-card input:focus,
+.contato-card textarea:focus {
+    border-color: #007bff;
+}
+
+.contato-card textarea {
+    resize: vertical;
+}
+
+.contato-card button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contato-card button:hover {
+    background: #0056b3;
+}
+
+.erros {
+    background: #ffe5e5;
+    border: 1px solid #ffaaaa;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.erros p {
+    color: #cc0000;
+    font-size: 13px;
+    margin: 4px 0;
+}
+
+.sucesso {
+    width: 90%;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+.sucesso h1 {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.sucesso p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.sucesso a {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.sucesso a:hover {
+    background: #0056b3;
+}
+
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 600px) {
+    
+    .contato-card {
+        padding: 25px 20px;
+    }
+    
+    .contato-card h1 {
+        font-size: 24px;
+    }
+
+}
